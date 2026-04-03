@@ -1,0 +1,7 @@
+node_modules/
+allure-results/
+allure-report/
+target/
+.idea/
+*.iml
+.mvn/wrapper/maven-wrapper.jar

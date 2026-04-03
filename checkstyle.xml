@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <property name="severity" value="warning"/>
+
+    <module name="TreeWalker">
+        <!-- Запрет неиспользуемых импортов -->
+        <module name="UnusedImports"/>
+        <!-- Запрет дублирующих импортов -->
+        <module name="RedundantImport"/>
+        <!-- Переменные должны быть объявлены в нужном месте -->
+        <module name="VariableDeclarationUsageDistance"/>
+        <!-- Методы не должны быть слишком длинными (макс. 60 строк) -->
+        <module name="MethodLength">
+            <property name="max" value="60"/>
+        </module>
+        <!-- Фигурные скобки обязательны для if/else/for/while -->
+        <module name="NeedBraces"/>
+        <!-- Запрет == для строк (использовать equals) -->
+        <module name="StringLiteralEquality"/>
+        <!-- Запрет пустых блоков catch без комментария -->
+        <module name="EmptyCatchBlock">
+            <property name="exceptionVariableName" value="ignored|expected"/>
+        </module>
+    </module>
+
+    <!-- Запрет символов табуляции -->
+    <module name="FileTabCharacter">
+        <property name="eachLine" value="true"/>
+    </module>
+</module>
