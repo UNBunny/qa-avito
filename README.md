@@ -31,7 +31,7 @@ qa-avito/
 ├── pom.xml                           # Maven: зависимости, Allure, Checkstyle, fmt
 ├── checkstyle.xml                    # Правила линтера Checkstyle
 ├── Dockerfile                        # Запуск тестов без Java/Maven
-├── allure-example.html               # Пример сгенерированного Allure-отчёта
+├── allure-screenshots/               # Скриншоты сгенерированного Allure-отчёта
 ├── TESTCASES.md                      # Описание тест-кейсов
 ├── BUGS.md                           # Найденные дефекты
 ├── postman_collection.json           # Postman-коллекция
@@ -104,7 +104,7 @@ mvn test -Dtest=E2eTest
 
 Отчёт сохраняется в `target/site/allure-maven-plugin/index.html`.
 
-Пример сохранённого отчёта: [`allure-example.html`](allure-example.html)
+Скриншоты сгенерированного отчёта: [`allure-screenshots/`](allure-screenshots/)
 
 ### Что отображается в отчёте
 
@@ -146,6 +146,12 @@ mvn test -Dtest=E2eTest
 # Только проверить без изменений
 .\mvnw fmt:check
 ```
+
+## Задание 1: Баги на скриншоте
+
+Анализ скриншота страницы поиска Avito с поиском багов и приоритизацией: [TASK1.md](TASK1.md)
+
+---
 
 ## Обнаруженные дефекты
 
